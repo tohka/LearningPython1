@@ -25,9 +25,15 @@ Mac や Linux は簡単にインストールすることができる、あるい
 
 スタートメニューから「 QGIS 3.6 」→「 OSGeo4W Shell 」を実行すると OSGeo4W Shell という名のコマンドプロンプトが起動される。
 
-OSGeo4W Shell では `C:\Program Files\QGIS 3.6\bin` を検索パスに追加等の設定がなされており、 GDAL/OGR などのコマンドが使用できるようになっている。 `python` (Python 2.7) や `python3` (Python 3.x) にもパスは通っているが、 Python 関係で必要な設定が不十分でエラーが発生する。
+OSGeo4W Shell では `C:\Program Files\QGIS 3.6\bin` を検索パスに追加等の設定がなされており、 GDAL/OGR などのコマンドが使用できるようになっている。
 
-![OSGeo4W Shell without py3_env](images/OSGeo4WShell_1.png)
+---
+
+### OSGeo4W Shell から Python の実行
+
+`python` (Python 2.7) や `python3` (Python 3.x) にもパスは通っているが、 Python 関係で必要な設定が不十分でエラーが発生する。
+
+<img alt="OSGeo4W Shell without py3_env" src="images/OSGeo4WShell_1.png" width="300">
 
 ---
 
