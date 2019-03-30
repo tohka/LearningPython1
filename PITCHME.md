@@ -41,7 +41,7 @@ OSGeo4W Shell では `C:\Program Files\QGIS 3.6\bin` を検索パスに追加等
 
 そこで `py3_env.bat` を実行すると、自動的に必要な設定が行われる。
 
-![OSGeo4W Shell with py3_env](images/OSGeo4WShell_2.png)
+<img alt="OSGeo4W Shell with py3_env" src="images/OSGeo4WShell_2.png" width="300">
 
 ---
 
@@ -49,7 +49,7 @@ OSGeo4W Shell では `C:\Program Files\QGIS 3.6\bin` を検索パスに追加等
 
 `python3` あるいは `python` コマンドを引数なしで実行すると対話モードで起動される。ちょっとした動作の確認や、簡単なスクリプトの実行なら対話モードでよい。対話モードの Python を終了するには `quit()` を実行する。
 
-![Python -- interactive mode](images/OSGeo4WShell_3.png)
+<img alt="Python -- interactive mode" src="images/OSGeo4WShell_3.png" width="300">
 
 ---
 
@@ -57,7 +57,7 @@ OSGeo4W Shell では `C:\Program Files\QGIS 3.6\bin` を検索パスに追加等
 
 `python3 SCRIPT_FILE` と実行すると、スクリプトファイルが処理される。
 
-![Python -- with script file](images/OSGeo4WShell_4.png)
+<img alt="Python -- with script file" src="images/OSGeo4WShell_4.png" width="300">
 
 ---
 
