@@ -33,6 +33,32 @@ OSGeo4W Shell では `C:\Program Files\QGIS 3.6\bin` を検索パスに追加等
 
 `python` (Python 2.7) や `python3` (Python 3.x) にもパスは通っているが、 Python 関係で必要な設定が不十分でエラーが発生する。
 
+```
+run o-help for a list of available commands
+C:\>python -V
+Python 2.7.14
+
+C:\>python3 -V
+Python 3.7.0
+
+C:\>python3
+Fatal Python error: initfsencoding: unable to load the file system codec
+  File "C:\PROGRA~`\QGIS3~1.6\apps\Python27\lib\encodings\__init__.py", line 123
+    raise CodecRegistryError,\
+
+SyntaxError: invalid syntax
+
+Current thread 0x00001714 (most recent call first):
+
+C:\>
+```
+
+---
+
+### OSGeo4W Shell から Python の実行
+
+`python` (Python 2.7) や `python3` (Python 3.x) にもパスは通っているが、 Python 関係で必要な設定が不十分でエラーが発生する。
+
 <img alt="OSGeo4W Shell without py3_env" src="images/OSGeo4WShell_1.png" width="300">
 
 ---
