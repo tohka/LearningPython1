@@ -3,5 +3,6 @@
 }
 .reveal code {
   background-color: rgb(240, 240, 240);
-  padding: 4px;
+  border-radius: 3px;
+  padding: .2em .4em;
 }
