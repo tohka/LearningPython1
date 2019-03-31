@@ -198,7 +198,7 @@ Python 3.x は `整数 / 整数` の演算は浮動小数点数（実数）が�
 2
 ```
 
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
   - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#numeric-types-int-float-complex)
 
 --- 
@@ -222,7 +222,7 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 <class 'int'>
 ```
 
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
   - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#numeric-types-int-float-complex)
 
 ---
@@ -238,21 +238,17 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 2
 >>> round(3.5)
 4
->>> round(4.5)
-4
 >>> round(-1.5)
 -2
 >>> round(-2.5)
 -2
 >>> round(-3.5)
 -4
->>> round(-4.5)
--4
 ```
 
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
   - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#numeric-types-int-float-complex)
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み関数　＞　round)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み関数　＞　round)
   - @size[0.8em](https://docs.python.org/ja/3/library/functions.html#round)
 
 ---
@@ -269,21 +265,17 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 2
 >>> math.floor(-1.5)
 -2
->>> math.floor(-2.5)
--3
 >>> math.ceil(1.5)
 2
 >>> math.ceil(2.5)
 3
 >>> math.ceil(-1.5)
 -1
->>> math.ceil(-2.5)
--2
 ```
 
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
   - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#numeric-types-int-float-complex)
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　math)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　math)
   - @size[0.8em](https://docs.python.org/ja/3/library/math.html)
 
 ---
@@ -303,11 +295,11 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 21
 ```
 
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
   - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#numeric-types-int-float-complex)
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み関数　＞　abs)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み関数　＞　abs)
   - @size[0.8em](https://docs.python.org/ja/3/library/functions.html#abs)
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み関数　＞　pow)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み関数　＞　pow)
   - @size[0.8em](https://docs.python.org/ja/3/library/functions.html#pow)
 
 ---
@@ -316,9 +308,7 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 
 Python 3.x における文字列は Unicode 列で、変更不可（ immutable ）なシーケンス型である。
 
-変更不可であるため文字列の一部（たとえば3文字目）を変更することはできないが、文字列の一部を変更した新たな文字列を作成することはできる。
-
-文字列は一重引用符 `'` あるいは二重引用符 `"` で囲むことで表される。また改行文字やタブ文字などの制御文字は `\x` で記述することができる。なお、 Python 3.x は一重引用符であってもエスケープされる。エスケープしたくない場合は `r"..."` のように `r` プレフィックスをつける。
+文字列は一重引用符 `'` あるいは二重引用符 `"` で囲むことで表される。また改行文字 `\r` / `\n` やタブ文字　`\t` などの制御文字や引用符自身 `\'` / `\"` は `\` でエスケープすることで記述することができる。なお、 Python 3.x は一重引用符であってもエスケープされる。エスケープせずに `\` は `\` として扱いたい場合は `r"..."` のように `r` プレフィックスをつける。
 
 ```python
 >>> "apple"
@@ -327,19 +317,44 @@ Python 3.x における文字列は Unicode 列で、変更不可（ immutable �
 'banana'
 >>> 'abc\tdef'
 'abc\tdef'
->>> print('abc\tdef')
-abc	def
 >>> r'abc\tdef'
 'abc\\tdef'
->>> print(r'abc\tdef')
-abc\tdef
 ```
 
-- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　言語リファレンス　＞　リテラル　＞　文字列およびバイト列リテラル)
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　言語リファレンス　＞　リテラル　＞　文字列およびバイト列リテラル)
   - @size[0.8em](https://docs.python.org/ja/3/reference/lexical_analysis.html#string-and-bytes-literals)
 
 ---
 
+### 文字列
+
+このほか、引用符を三連で囲む方法 `''' ... '''` / `""" ... """` もある。この方法は、途中に改行文字を含めることも、引用符をエスケープなしで記述することができる。コメント（ドキュメンテーション）などや、複数行のコメントとしても利用される。
+
+```python
+>>> """
+... "abc"
+... 'def'
+... """
+'\n"abc"\n\'def\'\n'
+```
+
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　言語リファレンス　＞　リテラル　＞　文字列およびバイト列リテラル)
+  - @size[0.8em](https://docs.python.org/ja/3/reference/lexical_analysis.html#string-and-bytes-literals)
+
+---
+
+### 文字コードと文字符号化方法
+
+文字は、たとえば `a` であれば `97` 、 `あ` であれば `12354` といったように文字に数値を割り当てて管理されている。この対応のことを文字コードと呼び、様々な種類が存在する。しかし、そのコードを符号化する方法（エンコーディング）は更に複数の種類が存在する。
+
+| 文字 | Unicode | UTF-8 | UTF-16 BE |
+|------|---------|-------|-----------|
+|  a   | <tt>01100001</tt> | 01100001 | 00000000 01100001 |
+|  あ  | 00110000 01000010 | 11100011 10000001 10000010 | 00110000 01000010 |
+
+---
+
+変更不可であるため文字列の一部（たとえば3文字目）を変更することはできないが、文字列の一部を変更した新たな文字列を作成することはできる。
 
 シーケンス型とは、順番をもった複数の要素を扱った型で、リストやタプル（後述）もシーケンス型にあたる。シーケンス型で利用できる関数等が用意されている。
 
