@@ -4,6 +4,10 @@
 .reveal code {
   background-color: rgb(240, 240, 240);
   border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   padding: .2em .4em;
   font-size: 90%;
 }
