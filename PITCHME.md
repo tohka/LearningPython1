@@ -30,6 +30,14 @@ Mac や Linux は簡単にインストールすることができる、あるい
 
 OSGeo4W Shell 自体はコマンドプロンプトだが、検索パスに `C:\Program Files\QGIS 3.6\bin` の追加等の設定がなされており、 GDAL/OGR などのコマンドが使用できるようになっている。
 
+```
+run o-help for a list of available commands
+C:\>gdalinfo --version
+GDAL 2.4.1, released 2019/03/15
+
+C:\>
+```
+
 ---
 
 ### OSGeo4W Shell から Python の実行
