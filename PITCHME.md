@@ -382,13 +382,38 @@ b'\x82\xa0'
 'd'
 >>> "abcdef"[-1]
 'f'
+>>> "abcdef"[0:3]
+'abc'
 ```
 
 - @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　シーケンス型)
   - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#sequence-types-list-tuple-range)
 
+---
+
+### シーケンス型
+
+```python
+>>> 'a' in "abcdef"
+True
+>>> 'z' in "abcdef"
+False
+>>> 'cd' in "abcdef"
+True
+>>> "abcdef".index('c')
+2
+>>> "abcdef".index('z')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> "Hello" + " " + "World"
+'Hello World'
+```
+
+- @size[0.8em](Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　シーケンス型)
+  - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#sequence-types-list-tuple-range)
+
+---
 
 
-
-変更不可であるため文字列の一部（たとえば3文字目）を変更することはできないが、文字列の一部を変更した新たな文字列を作成することはできる。
 
