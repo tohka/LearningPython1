@@ -3,11 +3,11 @@
 }
 .reveal code {
   background-color: rgb(240, 240, 240);
-  border-radius: 3px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  padding: .2em .4em;
+  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: .1em .2em;
   font-size: 90%;
 }
