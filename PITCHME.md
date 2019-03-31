@@ -222,13 +222,14 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 <class 'int'>
 ```
 
+- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
+  - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#numeric-types-int-float-complex)
+
 ---
 
 ### 数値の丸め
 
-数値を丸めるには `round()` を使う。ただし、 Python 3.x では四捨五入ではなく `N.5` に対して偶数側に丸める（銀行丸め、 ISO 丸め、 JIS 丸め等と呼ばれる）。
-
-丸め手法として好ましいとされる手法であるが他言語との統一性はないため注意を要する。四捨五入は `math.floor(num + 0.5)` 等で代替可能。
+数値を丸めるには `round()` を使う。ただし、 Python 3.x では四捨五入ではなく `N.5` に対して偶数側に丸める（銀行丸め、 ISO 丸め、 JIS 丸め等と呼ばれる）。丸め手法として好ましいとされる手法であるが他言語との統一性はないため注意を要する。四捨五入は `math.floor(num + 0.5)` 等で代替可能。
 
 ```python
 >>> round(1.5)
@@ -248,6 +249,11 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 >>> round(-4.5)
 -4
 ```
+
+- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
+  - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#numeric-types-int-float-complex)
+- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み関数　＞　round)
+  - @size[0.8em](https://docs.python.org/ja/3/library/functions.html#round)
 
 ---
 
@@ -275,6 +281,11 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 -2
 ```
 
+- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
+  - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#numeric-types-int-float-complex)
+- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　math)
+  - @size[0.8em](https://docs.python.org/ja/3/library/math.html)
+
 ---
 
 ### 数値型に関する他の操作
@@ -292,6 +303,13 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 21
 ```
 
+- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み型　＞　数値型)
+  - @size[0.8em](https://docs.python.org/ja/3/library/stdtypes.html#numeric-types-int-float-complex)
+- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み関数　＞　abs)
+  - @size[0.8em](https://docs.python.org/ja/3/library/functions.html#abs)
+- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　ライブラリーリファレンス　＞　組み込み関数　＞　pow)
+  - @size[0.8em](https://docs.python.org/ja/3/library/functions.html#pow)
+
 ---
 
 ### 文字列
@@ -299,6 +317,29 @@ Python 3.x では整数型は `int` 型（ `numbers.Integral` クラス）、浮
 Python 3.x における文字列は Unicode 列で、変更不可（ immutable ）なシーケンス型である。
 
 変更不可であるため文字列の一部（たとえば3文字目）を変更することはできないが、文字列の一部を変更した新たな文字列を作成することはできる。
+
+文字列は一重引用符 `'` あるいは二重引用符 `"` で囲むことで表される。また改行文字やタブ文字などの制御文字は `\x` で記述することができる。なお、 Python 3.x は一重引用符であってもエスケープされる。エスケープしたくない場合は `r"..."` のように `r` プレフィックスをつける。
+
+```python
+>>> "apple"
+'apple'
+>>> 'banana'
+'banana'
+>>> 'abc\tdef'
+'abc\tdef'
+>>> print('abc\tdef')
+abc	def
+>>> r'abc\tdef'
+'abc\\tdef'
+>>> print(r'abc\tdef')
+abc\tdef
+```
+
+- @size[0.8em](cf. Python 3.7.3 ドキュメント　＞　言語リファレンス　＞　リテラル　＞　文字列およびバイト列リテラル)
+  - @size[0.8em](https://docs.python.org/ja/3/reference/lexical_analysis.html#string-and-bytes-literals)
+
+---
+
 
 シーケンス型とは、順番をもった複数の要素を扱った型で、リストやタプル（後述）もシーケンス型にあたる。シーケンス型で利用できる関数等が用意されている。
 
